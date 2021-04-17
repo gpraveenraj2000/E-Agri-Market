@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>farmer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .container-fluid{
+  font-family:"times new roman";
+  }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="smart agri.html">E-Agri Market</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <a href="https://www.google.com/"><input type="text" class="form-control" placeholder="Search" name="search"></a>
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+		<li><a href="about.html"><span class="glyphicon glyphicon-globe"></span>  About</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tag"></span>  More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+             <li><a href="#">24 * 7 Help</a></li>
+             <li><a href="agri.html">Our Products</a></li>
+		     <li><a href="#">comments</a></li>
+          </ul>
+        </li>
+		<li>
+		<div id="google_translate_element"></div>
+<script> 
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+		</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li>
+	  <button id="myBtn"><span class="glyphicon glyphicon-bell"></span>  Notification</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Some text in the Modal..</h3>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	  </li>
+	  <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="welcome.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+		        <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> logout</a></li>
+
+      </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+<img src="pictures\farmer.jpg"  alt="farmers" style="width:100%">
+<div class="row">
+    <div class="col-sm-6">
+	<div class="thumbnail">
+<img src="pictures\farmer5.jpg" class="img-circle" alt="farmers" style="width:50%">
+ </div>
+ </div>
+  <div class="col-sm-6">
+  <div class="thumbnail">
+  <img src="pictures\farmer2.jpg" class="img-circle" alt="farmers" style="width:50%">
+ </div>
+ </div>
+ </div>
+ <center><b><h1>Welcome Farmers</h1><b></center>
+ <h1><b>About</b></h1>
+ <p>E-Agri Market is an online digital tool to provide farmers a platform to reach and sell their agricultural products directly to end consumers that directly is from farm to customer place. Farmers are also getting details about their daily need Farm Equipment's, green house needs, animal farm and Feeds & Daily Agro Need at farmer’s doorstep for Quality Produce & services.
+
+E-Agri Market is a Farmer to Consumer platform, which allows farmers to do direct marketing of their produces to consumer and retailers without middleman or intermediary. It enables retailers to buy directly from farmers and sell online in their nearby area with affordable price. In addition, consumers can buy from the nearest shop or directly from farmer with complete traceability of the products
+
+E-Agri Market is a revolutionary online farmers’ market app, which connects the local farmers along with their fresh and delicious crops with food lovers all around the world. Farmerprice is different from any other grocery-shopping app because of something we can it as a “Direct Farming.” by directly connecting farmers with consumers. We even avoid unnecessary and expensive middlemen, and both sides end up benefiting.Download Farmerprice app today and experience the service by choosing the fresh vegetables, fruits, eggs directly from farmers with reasonable rates.
+ </p>
+</div>
+<center><u><h2><b>Products You Want To Sell</b></h2></u></center>
+<div class="row">
+<div class="col-md-4">
+      <div class="thumbnail">
+        <a href= "vegetablessell.html">
+          <img src="pictures\i2.jpg" class="img-circle" alt="Nature" style="width:50%">
+          <div class="caption">
+            <center><h3><p> Vegetables</p></h3></center>
+          </div>
+        </a>
+      </div>
+    </div>
+	
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="fruitssell.html">
+          <img src="pictures\i3.jpg" class="img-circle" alt="Nature" style="width:50%">
+          <div class="caption">
+            <center><h3><p> Fruits</p></h3></center>
+          </div>
+        </a>
+      </div>
+    </div>
+	
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="pictures\a10.jpg" class="img-circle" alt="Fjords" style="width:50%">
+          <div class="caption">
+            <center><h3><p> Oil Products</p></h3></center>
+          </div>
+        </a>
+      </div>
+    </div>
+
+</body>
+</html>

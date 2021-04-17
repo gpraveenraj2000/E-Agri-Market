@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Agri Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   body {
+  margin: 0;
+}
+h2{
+color: black;
+font-family:times new roman;
+
+}
+.header {
+  background-color:white;
+  color: green;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  		font-family:"Times new Roman";
+
+}
+ .header1{
+    text-align:center;
+    font-family:"Times new Roman";
+
+ }
+  .navbar{
+		font-family:"Times new Roman";
+		background-color; ;
+		}
+	
+	
+	.carousel-caption{
+		font-family:"Times new Roman";
+		color: white;
+		text-align:center;
+		padding-right:;
+		
+		
+		}
+		
+		.item{
+		max-width: 15000px;
+		max-height: 700px;
+		}
+		
+			
+		
+	.container{
+		font-family:"Times new Roman";
+		background-color:white;
+		}
+	.container-fluid{
+		font-family:"Times new Roman";
+		color: green;
+		
+		
+		
+		
+		}
+		.logo-small {
+    color: green;
+    font-size: 50px;
+  }
+  .logo {
+    color: green;
+    font-size: 200px;
+  }
+	.jumbotron text-center{
+		font-family:"Times new Roman";
+		background-color:gray;
+		}
+		#myBtn{
+background-color: lightred;
+  margin: auto;
+  padding: 10px;
+  
+}
+		.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color:black;
+  color:white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-color: white;
+  text-decoration: white;
+  cursor: pointer;
+}
+
+
+.action {
+  font-family:"Times new Roman"; 
+  position: relative;
+  text-align: center;
+  background-color:;
+  color:black;
+ 
+}
+	</style>
+<script>
+    $(document).ready(function(){
+        $(".show-toast").click(function(){
+            $("#myToast").toast('show');
+        });
+    });
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="smart agri.html">E-Agri Market</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <a href=""><input type="text" class="form-control" placeholder="Search" name="search"></a>
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+		<li><a href="about.html"><span class="glyphicon glyphicon-globe"></span>  About</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tag"></span>  More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+             <li><a href="#">24 * 7 Help</a></li>
+             <li><a href="agri.html">Our Products</a></li>
+		     <li><a href="#">comments</a></li>
+          </ul>
+        </li>
+		<li>
+		<div id="google_translate_element"></div>
+<script> 
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+		</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li>
+	  <button id="myBtn"><span class="glyphicon glyphicon-bell"></span>  Notification</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Some text in the Modal..</h3>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	  </li>
+	  <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+       
+        <li><a href="welcome.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+		 <li><a href="signin.php"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+      </ul>
+    </div>
+</nav>
+</div>
+
+<div class="header">
+ <div class="row">
+    <div class="col-sm-4">
+       <img src="pictures\logo1.jpg" class="img-circle">
+    </div>
+    <div class="col-sm-4">
+      
+    <h1> <b> E-Agri Market </b></h1>
+	<h2><span class="glyphicon glyphicon-globe"></span>100% Natural</h2>
+     
+    </div>
+    
+  </div>
+
+</div>
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="pictures\f1.jpg"  alt="fruits">
+        <div class="carousel-caption">
+		<h1><span class="glyphicon glyphicon-globe"></span>100% Natural</h1>
+          <h1>Fresh And Organic Fruits</h1>
+         <h3>Part Of The Secret To Success In Life Is To Eat What You Like And Let The Food Fight It Outside.</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="pictures\raj.jpg"  alt="vegetables">
+        <div class="carousel-caption">
+		<h1><span class="glyphicon glyphicon-globe"></span>100% Natural</h1>
+          <h1>Organic Products Grown With Love</h1>
+          <h3>Green Veggies On Your Plate,Will Make You Feel Good And Keep A Slim Weight.</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="pictures\vegetable.jpg"  alt="vegetables">
+        <div class="carousel-caption">
+		<h1><span class="glyphicon glyphicon-globe"></span>100% Natural</h1>
+          <h1>Huge Variety Of Fresh Vegetables</h1>
+          <h3>No Killing, Only Repelling In Organic.</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="pictures\9.jpg"  alt="fruits">
+        <div class="carousel-caption">
+		<h1><span class="glyphicon glyphicon-globe"></span>100% Natural</h1>
+          <h1>Huge Variety Of Freshest Fruits</h1>
+         <h3> Know Your Farmer, Know Your Food.</h3>
+        </div>
+      </div>
+    </div>
+	
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  <div class="container-fluid">
+  <u><h1><b>Our Agri Prducts</b></h1></u>
+  <h2><p class="text-justify"><li> Agriculture comprises of cultivation of crops for food and fodder.</li></p>
+  <p class="text-justify"><li> Scientific research and improved farming techniques helped India to achieve the Green revolution and     attain a self-reliant status in terms of food production.</li></p>
+  <p class="text-justify"><li> India is the second-largest producer of wheat and paddy in the world.</li></p></h2>
+  </div>
+  <div class="container-fluid">
+  <u><center><h1><b>we provide buying and selling products in this website</b></h1></center></u></b>
+  <h2><li>E-Agri Market is a Farmer to Consumer platform, which allows farmers to do direct marketing of their produces to consumer and retailers without middleman or intermediary.</li>
+  <li>It enables retailers to buy directly from farmers and sell online in their nearby area with affordable price.</li>
+  <li>In addition, consumers can buy from the nearest shop or directly from farmer with complete traceability of the products</h2></li>
+  <div class="row">
+    <div class="col-sm-6">
+     <div class="thumbnail">
+        <a href="farmer.html">
+          <img src="pictures\sell.jpg" class="img-circle" alt="Nature" style="width:50%">
+          <div class="caption">
+            <center><h3><p>ARE YOU WANT TO SELL</p></h3></center>
+			<center><h4>Farmers</h4></center>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+	<div class="thumbnail">
+        <a href="agri.html">
+          <img src="pictures\buyers.jpg" class="img-circle" alt="Nature" style="width:50%">
+          <div class="caption">
+            <center><h3><p>ARE YOU WANT TO BUY</p></h3></center>
+			<center><h4>Customers</h4></center>
+          </div>
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+<footer class="container-fluid text-center"> 
+  <form class="form-inline">Get Products:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <a href="signin.php" button type="button" class="btn btn-danger">Sign Up</a></button>
+  </form>
+</footer>
+<div class="container-fluid">
+ <div id="services" class="container-fluid text-center">
+  <h1>How We Can Help</h1>
+  <h3>................</h3>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cloud logo-small"></span>
+      <h1>Record-Keeping</h1>
+      <h2>Fulfill reporting requirements and record your farm's activities as they happen.  With Croptracker your spray, employee, harvest, irrigation, and other production practice records are only a few clicks or taps away - whenever and wherever you need them.</h2> 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tasks logo-small"></span>
+      <h1>Scheduling</h1>
+     <h2>Keep your farm on track and avoid forgotten or duplicated tasks.  Create your own schedules quickly and easily or choose from thousands of schedule templates.</h2> 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h1>Work Crew Communications & Activity Tracking</h1>
+	  <h2>A connected team is more a productive team.  Monitor, assign tasks to, and communicate with your employees in real-time.  </h2> 
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo-small"></span>
+      <h1>Analytics & Reports</h1>
+      <h2>Capable of generating more than 50 reports, Croptracker makes tracking your farm's progress a snap and can shave days off the auditing process.  Let us handle the paperwork so you can get back to your farm.</h2> 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-map-marker logo-small"></span>
+      <h1>Traceability</h1>
+	<h2>We're here to make food safety simple.  View where any given product came from, right down to the block and employee responsible.  Create detailed traceability reports to meet food safety requirements and improve risk management when incidents and food recalls occur. </h2> 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-link logo-small"></span>
+      <h1>Comprehensive Support</h1>
+     <h2>Our Support Team is ready to assist you at every step of the way - from set-up, to troubleshooting, to customizing your package to fit your unique needs.  We’ll help you get the most out of your software, so it can help you get the most out of your farm.</h2> 
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="action">
+<center><h1>Our Goal</h1></center>
+  <img src="pictures\final.jpg" class="img-circle" alt="Nature" style="width:50%">
+  
+    <center><h1>Our mission is to make crop production more profitable, efficient, and safe.</h1></center>
+    
+  </div>
+
+
+<div class="jumbotron text-center">
+<div class="container bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Thenkalam,Tirunelveli</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 9597848813</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> gpraveenraj2000@gmail.com</p>
+    </div>
+	</div>
+  
+
+</body>
+</html>
